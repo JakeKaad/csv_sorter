@@ -32,3 +32,13 @@ Feature: CSV text sorting
     Given a CSV file with more than one line
     And the sorter receives the CSV filepath as an argument
     Then the CSV sorter is invalid
+
+  Scenario: An empty filename is invalid
+    Given a CSV filepath that is nil
+    And the sorter receives the CSV filepath as an argument
+    Then the CSV sorter is invalid
+
+  Scenario: An filename that is not csv
+    Given a filepath leading to a non csv file
+    And the sorter receives the CSV filepath as an argument
+    Then the CSV sorter is invalid
