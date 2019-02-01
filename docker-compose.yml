@@ -1,5 +1,5 @@
 csv:
   image: ruby:2.5.3-slim
-  command: bash -c "ruby csv-sorter/main.rb csv-sorter/input.csv"
+  command: "ruby csv-sorter/main.rb csv-sorter/input.csv"
   volumes:
     - .:/csv-sorter
