@@ -12,7 +12,7 @@ class CsvSorter
     CSV.foreach(filename) do |row|
       @sorted_row = row.compact.sort
     end
-    CSV.open("output.csv", "wb") do |csv|
+    CSV.open("./output.csv", "wb") do |csv|
       csv << @sorted_row
     end
   end
