@@ -7,19 +7,28 @@ ignoring nil values.
 ### Programming - Running the sorter
 
 Step 1 Install Docker
+
 https://docs.docker.com/install/
 
-Step 2 Ensure docker-compose is installed
-`docker-compose -v`
+Step 2 Ensure docker-compose is installed. Docker desktop should have installed this.
+```
+docker-compose -v
+```
 
 Step 3 Pull docker image
-`docker-compose pull`
+```
+docker-compose pull
+```
 
 Step 4 Run the sorter
-`docker-compose run csv`
+```
+docker-compose run csv
+```
 
 Step 5 Open outputs
-`vi output.csv`
+```
+vi output.csv
+```
 
 
 ### Gherkin
@@ -124,4 +133,4 @@ level.
 
 I also try to avoid tests that include a lot of messaging, like testing the
 verbiage of flash notifications or toaster messages. I think manual testing
-by SAs or QAEs should surface any bad verbiage. 
+by SAs or QAEs should surface any bad verbiage.
